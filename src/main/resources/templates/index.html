@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>ABC Company</title>
+    <link rel="stylesheet" href="/CSS/home.css" />
+    <link rel="stylesheet" href="/CSS/style.css" />
+</head>
+<body>
+
+<header>
+  <nav class="navbar">
+    <div class="left-nav">
+      <div class="logo">ABC Company</div>
+      <ul class="nav-links-left">
+        <li><a href="/">Home</a></li>
+        <li><a href="/allEmployees">All Employees</a></li>
+      </ul>
+    </div>
+    <ul class="nav-links-right">
+    <li>
+        <a href="/login">Log-in</a>
+    </li>
+    <li>
+        <a href="/signup">Sign-up</a>
+    </li>
+    <li>
+    	<a href="/addEmployee">Create New Employee</a>
+    </li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+<div class="container" style="margin-top:10vh;">
+    <h1>Employees List</h1>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Department</th>
+            <th>Actions</th>
+        </tr>
+        <tr th:each="employee : ${employees}">
+            <td th:text="${employee.name}"></td>
+            <td th:text="${employee.email}"></td>
+            <td th:text="${employee.department}"></td>
+            <td>
+                <a th:href="@{'/showFormForUpdate/' + ${employee.id}}">Edit</a>
+                <a th:href="@{'/deleteEmployee/' + ${employee.id}}" onclick="return confirm('Delete this employee?')">Delete</a>
+            </td>
+        </tr>
+    </table>
+</div>
+</main>
+
+<footer>
+<p>&copy; ABC Company pvt. ltd., All rights reserved.</p>
+</footer>
+
+</body>
+</html>

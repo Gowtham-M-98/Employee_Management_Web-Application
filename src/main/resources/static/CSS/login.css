@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+}
+
+/* Navbar Container */
+.navbar {
+  background-color: #1e1e2f;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+/* Left Side: Logo and Left Links */
+.left-nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #f1c40f;
+}
+
+.nav-links-left {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links-left li a,
+.nav-links-right li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links-left li a:hover,
+.nav-links-right li a:hover {
+  color: #f1c40f;
+}
+
+/* Right Side: Auth and Action Links */
+.nav-links-right {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+/*Main Content*/
+main h4{
+	text-align:center;
+	margin-top: 10vh; 
+	font-size: 25px;
+}
+
+main button{
+	width: 300px;
+	height: 30px;
+	margin:20px 0 20px 625px;
+	border-radius: 10px;
+	background-color: #0080ff;
+	cursor: pointer;
+}
+
+main button:hover{
+	background-color: #0080c0;
+}
+
+main>button>a{
+	padding:10px 80px;
+	text-decoration:none;
+	color: black;
+}
+
+/* Footer */
+footer {
+  background-color: #2c3e50;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 60vh;
+}
