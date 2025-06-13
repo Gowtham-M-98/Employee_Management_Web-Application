@@ -1,0 +1,124 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+}
+
+/* Navbar Container */
+.navbar {
+  background-color: #1e1e2f;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+/* Left Side: Logo and Left Links */
+.left-nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #f1c40f;
+}
+
+.nav-links-left {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links-left li a i,
+.nav-links-right li a i{
+	font-size: 25px;
+	padding: 2px 10px;
+}
+
+.nav-links-left li a,
+.nav-links-right li a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: color 0.3s;
+}
+
+.nav-links-left li a:hover,
+.nav-links-right li a:hover {
+  color: #f1c40f;
+}
+
+/* Right Side: Auth and Action Links */
+.nav-links-right {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+/* Main Content */
+main div {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+main h1 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: #2c3e50;
+  text-align: center;
+}
+
+main h3 {
+  margin-top: 30px;
+  color: #34495e;
+}
+
+main p, main ul, main address {
+  margin-top: 10px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+main ul {
+  padding-left: 20px;
+}
+
+main img {
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.contact{
+	display:flex;
+	align-items: center;
+	justify-content:space-between;
+}
+
+/* Footer */
+footer {
+  background-color: #2c3e50;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px;
+}
